@@ -351,8 +351,14 @@ a {
     background-color: #503e33;
 }
 
-.hotels__stars {
+.hotels-rating__stars {
     background-image: url(../img/star.svg);
+}
+
+.hotels-rating__number {
+    line-height: 21px;
+    color: #666666;
+    background-color: #f2f2f2 ;
 }
 
 

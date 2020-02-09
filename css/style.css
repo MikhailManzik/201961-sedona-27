@@ -22,6 +22,8 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+
+    background-color: #f2f2f2;
 }
 
 a {
@@ -39,8 +41,44 @@ a {
     overflow: hidden;
   }
 
+.wrapper {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.main-header {
+    background-color: #ffffff;
+}
+
+.main-header__logo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: 0 auto;
+}
+
 .main-nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.main-nav__item {
+    width: 20%;
+    padding: 15px 0;
+}
+
+.main-nav__item {
+    width: 20%;
+    padding: 15px 0;
 }
 
 .main-nav__link {
@@ -86,9 +124,17 @@ a {
     font-weight: bold;
 }
 
+.features {
+    display: flex;
+}
+
 .features__info {
+    width: 33.33%;
+    flex-grow: 1;
+
     color: #ffffff;
     line-height: 21px;
+    text-align: center;
 
     background-color: #81b3d2;
 }
@@ -97,13 +143,27 @@ a {
     font-weight: bold;
 }
 
+.features__pic {
+    width: 66.66%;
+    flex-grow: 1;
+}
+
 .features-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
     list-style: none;
+    background-color: #ffffff;
 }
 
 .features-list__item {
+    width: 33.33%;
+    flex-grow: 1;
+
     color: #333333;
     line-height: 21px;
+    text-align: center;
 }
 
 .features-list_bg-grey {
@@ -119,6 +179,8 @@ a {
 .promo {
     color: #333333;
     line-height: 24px;
+
+    background-color: #ffffff;
 }
 
 .promo__item_bold {
@@ -237,12 +299,15 @@ a {
 }
 
 .filter {
+    display: flex;
+
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
 }
 
 .filter__wrap {
+    display: flex;
     border: none;
 }
 
@@ -262,6 +327,10 @@ a {
     cursor: pointer;
 }
 
+.sorting__list {
+    display: flex;
+}
+
 .sorting__item_result {
     font-size: 21px;
     line-height: 26px;
@@ -269,6 +338,8 @@ a {
 }
 
 .sorting__item_type {
+    display: flex;
+
     font-size: 12px;
     line-height: 18px;
 }
@@ -315,6 +386,10 @@ a {
 .hotels__list {
     color: #333333;
     list-style: none;
+}
+
+.hotels__item {
+    display: flex;
 }
 
 .hotels__head {
@@ -380,6 +455,14 @@ a {
     background-color: #f2f2f2 ;
 }
 
+.main-footer {
+    display: flex;
+}
+
+.footer-item {
+    width: 33.33%;
+    flex-grow: 1;
+}
 
 .footer-item__contacts {
     color: #000000;

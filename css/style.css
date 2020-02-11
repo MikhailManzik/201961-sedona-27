@@ -593,9 +593,13 @@ a {
 }
 
 .main-footer {
-    display: flex;
+    position: absolute;
+    bottom: 0;
 
-    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-item {

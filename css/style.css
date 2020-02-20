@@ -81,7 +81,7 @@ a {
 
 .main-nav__item {
     width: 20%;
-    padding: 15px 0;
+    padding: 15px 0 16px 0;
 }
 
 .main-nav__item:first-child {
@@ -102,7 +102,7 @@ a {
 
 .main-nav__link {
     color: #000000;
-    line-height: 26px;
+    line-height: 25px;
     font-weight: bold;
 }
 
@@ -126,7 +126,7 @@ a {
     background-color: #eee;
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
-    background-position: 0px -55px;
+    background-position: 0px -56px;
 }
 
 .welcome__top {
@@ -146,8 +146,8 @@ a {
 }
 
 .welcome__bottom {
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 61px;
+    padding-bottom: 51px;
 
     text-align: center;
 
@@ -171,7 +171,7 @@ a {
 .features__info {
     width: 33.33%;
     flex-grow: 1;
-    padding-top: 45px;
+    padding-top: 47px;
 
     color: #ffffff;
     line-height: 21px;
@@ -179,6 +179,11 @@ a {
 
     background-color: #81b3d2;
 }
+
+.features__info-bridge {
+    padding-top: 46px;
+}
+
 .features__head {
     margin-top: 0;
     margin-bottom: 24px;
@@ -189,7 +194,7 @@ a {
 
 .features__number {
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 }
 
 .features__number::before,
@@ -230,7 +235,7 @@ a {
 }
 
 .features-list__item {
-    padding-top: 160px;
+    padding-top: 161px;
     width: 33.33%;
     flex-grow: 1;
 
@@ -239,7 +244,7 @@ a {
     text-align: center;
 
     background-repeat: no-repeat;
-    background-position: 50% 60px;
+    background-position-x: 50%;
 }
 
 .features-list--bg-grey {
@@ -252,14 +257,17 @@ a {
 
 .features-list__item--house {
     background-image: url(../img/icon-1.svg);
+    background-position-y: 60px;
 }
 
 .features-list__item--food {
     background-image: url(../img/icon-3.svg);
+    background-position-y: 61px;
 }
 
 .features-list__item--present {
     background-image: url(../img/icon-2.svg);
+    background-position-y: 56px;
 }
 
 .features-list__head {
@@ -273,7 +281,7 @@ a {
 
 .features-list__number {
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 }
 
 .features-list__number::before,
@@ -295,7 +303,7 @@ a {
 
 .features-list__desc {
     margin: 0;
-    margin-bottom: 83px;
+    margin-bottom: 82px;
 }
 
 .features-list__desc-space {
@@ -303,7 +311,7 @@ a {
 }
 
 .promo {
-    padding-top: 55px;
+    padding-top: 49px;
 
     color: #333333;
     line-height: 24px;
@@ -317,7 +325,7 @@ a {
 }
 
 .promo__item-head {
-    margin-bottom: 19px;
+    margin-bottom: 24px;
 
     font-size: 30px;
     line-height: 36px; 
@@ -325,7 +333,7 @@ a {
 }
 
 .promo__item-desc {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
 }
 
 .button-popup {
@@ -399,7 +407,7 @@ a {
 .search-hotel__date {
     width: 346px;
     box-sizing: border-box;
-    padding: 6px 0 6px 13px;
+    padding: 9px 0 9px 11px;
 
     background-color: #f2f2f2;
     border: 2px solid transparent;
@@ -428,6 +436,7 @@ a {
     right: 0px;
     display: flex;
     height: 100%;
+    margin-right: 3px;
 
     border: none;
     background: none;  
@@ -475,7 +484,7 @@ a {
 }
 
 .persons__control {
-    padding: 16px 0;
+    padding: 18px 0;
     width: 40px;
 
     border: none;
@@ -540,7 +549,7 @@ a {
 
 .search-hotel__button-submit {
     width: 100%;
-    padding: 15px 0;
+    padding: 16px 0;
 
     font-size: 21px;
     line-height: 26px;
@@ -1010,9 +1019,11 @@ a {
 }
 
 .footer-item {
-    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 32px 0 31px 0;
     width: 33.33%;
-    flex-grow: 1;
+    
 }
 
 .footer-item__contacts-wrap {
@@ -1034,7 +1045,6 @@ a {
 
 .footer-item__phone {
     margin: 0;
-    margin-bottom: 32px;
 }
 
 .footer-item__socials {
@@ -1047,14 +1057,15 @@ a {
 }
 
 .social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 
-.social-list__item {
-    display: inline-block;
-}
 .social-list__link {
     position: relative;
     display: inline-block;
@@ -1089,18 +1100,18 @@ a {
 }
 
 .footer-item-copyrigth {
-    text-align: right;
+    justify-content: flex-end;
 }
 
 .footer-item-copyrigth-wrap {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
+    margin-right: 28px;
 }
 
 .footer-copyrigth__desc {
     align-self: center;
     margin-right: 8px;
+    margin-bottom: 5px;
 }
 
 .footer-copyrigth__link:hover .footer-copyrigth__icon,

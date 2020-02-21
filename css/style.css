@@ -577,7 +577,7 @@ a {
     background-color: #766357;
     background-image: url('../img/filter-background.jpg');
     background-repeat: no-repeat;
-    background-position: 0 -69px;
+    background-position: 0 -57px;
 }
 
 .filter__form {
@@ -590,7 +590,7 @@ a {
 
 .filter__wrap {
     display: flex;
-    width: 240px;
+    width: 254px;
     margin: 0;
     margin-top: 27px;
     padding: 0; 
@@ -598,14 +598,14 @@ a {
 }
 
 .filter__wrap--size {
-    width: 328px;
+    width: 318px;
     margin-left: auto;
 }
 
 .filter__title {
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .filter__title-range {
@@ -614,10 +614,13 @@ a {
 
 .filter__elem {
     position: relative;
+
     display: flex;
-    align-items: center;
+    height: 23px;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
+
+    align-items: center;
 }
 
 .filter__input {
@@ -640,7 +643,8 @@ a {
     content: "";
     position: absolute;
     left: 0;
-  
+    top: 0;
+
     width: 23px;
     height: 23px;
   
@@ -653,7 +657,8 @@ a {
     content: "";
     position: absolute;
     left: 0;
-  
+    top: 0;
+
     width: 26px;
     height: 26px;
   
@@ -664,7 +669,7 @@ a {
 .filter-range {
     position: relative;
 
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
 
     font-size: 0;
@@ -688,11 +693,11 @@ a {
 
 .filter-range__label {
     display: inline-block;
-    width: 90px;
+    width: 81px;
     padding-left: 65px;
 
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
     vertical-align: top;
   
     cursor: pointer;
@@ -757,7 +762,7 @@ a {
 .filter__button {
     display: block;
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     padding: 6px 35px;
 
     font-size: 14px;
@@ -778,7 +783,7 @@ a {
 }
 
 .filter-bottom {
-    padding: 35px 0;
+    padding: 30px 0;
 
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5 ;
@@ -803,7 +808,7 @@ a {
 
 .filter__item-type {
     display: flex;
-    margin-left: 50px;
+    margin-left: 48px;
 
     font-size: 12px;
     line-height: 18px;
@@ -823,7 +828,7 @@ a {
 }
 
 .options__item {
-    margin-right: 35px;
+    margin-right: 32px;
 }
 
 .options__link {
@@ -846,6 +851,9 @@ a {
 
 .options__link--active {
     color: #81b3d2;
+
+    border: none;
+
 }
 
 .sorting__icon {
@@ -883,18 +891,19 @@ a {
 
 .hotels__item {
     display: flex;
-    padding: 30px 72px;
+    padding: 25px 72px 27px;
 
     border-bottom: 1px solid #e5e5e5 ;
 }
 
 .hotels__img {
+    margin-top: 5px;
     margin-right: 30px;
 }
 
 .hotels__head {
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     color: #000000;
     font-size: 21px;
     line-height: 26px;
@@ -927,11 +936,11 @@ a {
 
 .hotels__text {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .hotels__button {
-    padding: 3px 17px;
+    padding: 4px 17px 5px;
 
     font-size: 14px;
     line-height: 21px;
@@ -978,6 +987,7 @@ a {
 
 .hotels-rating__stars {
     height: 17px;
+    margin-top: 5px;
 
     background-image: url(../img/star.svg);
     background-repeat: space;
@@ -996,13 +1006,18 @@ a {
 }
 
 .hotels-rating__number {
+    margin-bottom: 3px;
     padding: 3px 13px 3px 17px;
+
     line-height: 21px;
     color: #666666;
+
     background-color: #f2f2f2 ;
 }
 
 .main-footer {
+    padding: 35px 0 32px;
+
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1015,13 +1030,11 @@ a {
 
 .main-footer__wrap {
     display: flex;
-    padding: 0 6%;;
 }
 
 .footer-item {
     display: flex;
     align-items: center;
-    padding: 32px 0 31px 0;
     width: 33.33%;
     
 }
@@ -1040,15 +1053,15 @@ a {
 
 .footer-item__hashtag {
     display: block;
-    margin-bottom: 7px;
+    margin-top: -4px;
 }
 
 .footer-item__phone {
     margin: 0;
+    margin-top: 7px;
 }
 
 .footer-item__socials {
-    display: flex;
     justify-content: center;
 }
 

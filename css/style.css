@@ -81,20 +81,20 @@ a {
 
 .main-nav__item {
   width: 20%;
-  padding: 15px 0 16px 0;
+  padding: 14px 0 16px 0;
 }
 
-.main-nav__item:first-child {
+.main-nav__item:nth-child(4n+1) {
   margin-left: 6%;
 }
 
-.main-nav__item:nth-child(3) {
-  margin-left: auto;
+.main-nav__item:nth-child(4n-1) {
+  margin-left: 96px;
 
   text-align: right;
 }
 
-.main-nav__item:nth-child(4) {
+.main-nav__item:nth-child(n+4):nth-child(4n) {
   margin-right: 6%;
 
   text-align: right;
@@ -102,7 +102,7 @@ a {
 
 .main-nav__link {
   color: #000000;
-  line-height: 25px;
+  line-height: 26px;
   font-weight: bold;
 }
 
@@ -123,7 +123,7 @@ a {
 .welcome {
   line-height: 26px;
 
-  background-color: #eee;
+  background-color: #2c3f42;;
   background-image: url(../img/background-photo.jpg);
   background-repeat: no-repeat;
   background-position: 0px -56px;
@@ -136,13 +136,11 @@ a {
   background-repeat: no-repeat;
   background-position: 0 bottom;
   margin-bottom: -2px;
-
 }
 
 .welcome__img-text {
   margin-top: 76px;
   margin-bottom: 72px;
-
 }
 
 .welcome__bottom {
@@ -388,11 +386,11 @@ a {
   justify-content: space-between;
 
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .search-hotel__label {
-  width: 95px;
+  width: 112px;
   align-self: center;
 
   text-align: left;
@@ -401,17 +399,25 @@ a {
 .search-hotel__date {
   width: 346px;
   box-sizing: border-box;
-  padding: 9px 0 9px 11px;
+  padding: 8px 36px 8px 11px;
+
+  color: #000000;
+  line-height: normal;
+  font-weight: bold;
+  text-transform: uppercase;
 
   background-color: #f2f2f2;
   border: 2px solid transparent;
 }
 
-.search-hotel__date::placeholder {
+.search-hotel__date::-moz-placeholder,
+.search-hotel__date:-moz-placeholder {
+  opacity: 1;
+}
+
+
+.search-hotel__date::placeholder{
   color: #000000;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .search-hotel__date:hover,
@@ -437,6 +443,8 @@ a {
 }
 
 .button-date .button-date__icon {
+  align-self: center;
+
   fill: #cacaca;
 }
 
@@ -472,13 +480,12 @@ a {
 }
 
 .persons__label--size {
-  width: 88px;
-
-  text-align: right;
+  width: 112px;
+  padding-left: 48px;
+  box-sizing: border-box;
 }
 
 .persons__control {
-  padding: 18px 0;
   width: 40px;
 
   border: none;
@@ -526,6 +533,7 @@ a {
 
 .persons__number {
   width: 34px;
+  padding: 10px 0;
   border: none;
 
   font-weight: bold;
@@ -583,7 +591,6 @@ a {
 }
 
 .filter__wrap {
-  display: flex;
   width: 254px;
   margin: 0;
   margin-top: 27px;
@@ -703,6 +710,7 @@ a {
 
   color: #ffffff;
   font: inherit;
+  line-height: normal;
 
   background: none;
   border: none;
@@ -973,6 +981,7 @@ a {
 
 .hotels-rating {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
@@ -1047,7 +1056,7 @@ a {
 
 .footer-item__hashtag {
   display: block;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 
 .footer-item__phone {
@@ -1057,6 +1066,7 @@ a {
 
 .footer-item__socials {
   justify-content: center;
+  align-items: flex-start;
 }
 
 .footer-item__link {
@@ -1075,7 +1085,7 @@ a {
 
 .social-list__link {
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 46px;
   height: 48px;
 

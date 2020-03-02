@@ -14,6 +14,7 @@ buttonPopup.addEventListener("click", function () {
   popup.classList.add("popup-show");
   } else {
     popup.classList.remove("popup-show");
+    popup.classList.remove("popup-error");
     popup.classList.add("popup-close");
     }
 });
